@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: rgb(5, 5, 5);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 0 2em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    justify-content: space-between;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.625em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;}
+  
+  
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.625em;
+      background-color: #000000;
+      color: #fff;
+      z-index: 2; /* Ensure the navbar stays on top */
+    }
+    
+    .logo img {
+      max-width: 30%;
+      height: auto;
+      width: 100%;
+      border-radius: 0%;
+      object-fit: contain;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      position: relative; /* Set the parent container to relative */
+    }
+    
+    nav ul li {
+      position: relative;
+      margin-right: 0.625em;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.313em;
+    }
+    
+    nav ul li a:hover {
+      color: #ccc;
+    }
+    
+    nav ul li ul.dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #000000;
+      color: #fff;
+      padding: 0.625em;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 3; /* Ensure the dropdown is on top of other elements */
+    }
+    
+    nav ul li:hover ul.dropdown {
+      display: block;
+    }
+    
+    nav ul li ul.dropdown li {
+      margin: 0.313em 0;
+    }
+    
+    
+    .social-media img {
+      width: 1.25em;
+      height: 1.25em;
+    }
+    /* Theme Toggle */
+  .theme-toggle {
+      position: fixed;
+      bottom: 1.25em;
+      right: 1.25em;
+      display: flex;
+      align-items: center;
+      font-size: 0.875em;
+      color: #000000;
+    }
+    
+    .toggle-input {
+      display: none;
+    }
+    
+    .toggle-label {
+      cursor: pointer;
+      padding-left: 62.5%;
+    }
+    .bookingCount {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  h1 {
+    color: white;
+  }
+  p { 
+    color: white;
+  }
+      
+      
+      /* Roulette */
+/* Add your custom styles for the roulette game */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.spinning-wheel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.wheel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(circle, #ff7f00 20%, #ffbf00 80%);
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#rouletteResult {
+  font-size: 20px;
+  margin-top: 20px;
+  color: wheat;
+}
+
+
+  
+  /* Add your additional styling for the page layout, header, and footer */
+  
+    
+  
+    /* Responsive Styles */
+  
+  @media screen and (max-width: 767px) {
+    .login-box {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .login-box {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .login-box {
+      max-width: 800px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .login-box {
+      max-width: 1000px;
+    }
+  }
+  
+  

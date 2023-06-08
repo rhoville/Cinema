@@ -143,14 +143,14 @@ footer {
   }
   
   .movie-details p {
-    color: #555;
+    color: #ffffff;
     margin: 10px 0;
   }
   
   .buy-ticket-button {
     display: inline-block;
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: none;
     background-color: #007bff;
@@ -192,7 +192,7 @@ footer {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  background-color: #007bff;
+  background-color: #07488d;
   color: #fff;
   border-radius: 5px;
   margin-top: 40px;
